@@ -19,9 +19,7 @@ app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-
 const port = process.env.PORT || 4000;
-
 
 app.listen(port, (req, res) => {
     console.log(`App listening on http://localhost:${port}`)
